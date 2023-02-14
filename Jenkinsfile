@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Test'){
       steps{
-        sh './a'
+        sh 'a.exe'
         echo 'test stage successful'
 //         post{
 //           always{
