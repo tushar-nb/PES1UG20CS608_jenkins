@@ -13,6 +13,7 @@ pipeline {
       steps{
         sh 'cd main'
 //         echo "$PWD"
+        echo 'before printing directory list .'
         echo .* *
         sh './a.exe'
         echo 'test stage successful'
