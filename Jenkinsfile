@@ -11,7 +11,8 @@ pipeline {
     }
     stage('Test'){
       steps{
-        sh 'a.exe'
+        echo "$PWD"
+        sh 'cd main  && a.exe'
         echo 'test stage successful'
 //         post{
 //           always{
