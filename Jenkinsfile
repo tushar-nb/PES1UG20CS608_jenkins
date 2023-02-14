@@ -11,11 +11,11 @@ pipeline {
     }
     stage('Test'){
       steps{
-        sh 'cd main'
-//         echo "$PWD"
-        echo 'before printing directory list .'
-        echo .* *
-        sh './a.exe'
+//         sh 'cd main'
+// //         echo "$PWD"
+//         echo 'before printing directory list .'
+//         echo .* *
+        sh './a'
         echo 'test stage successful'
 //         post{
 //           always{
