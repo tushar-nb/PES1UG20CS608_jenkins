@@ -11,6 +11,7 @@ pipeline {
     }
     stage('Test'){
       steps{
+        sh 'cd main'
         echo "$PWD"
         sh 'cd main  && a.exe'
         echo 'test stage successful'
