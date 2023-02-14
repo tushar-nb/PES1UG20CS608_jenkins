@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build'){
       steps{
-        sh 'g++ -o a pipeline.cpp'
+        
+        sh 'cd main && g++ -o a pipeline.cpp'
         build 'PES1UG20CS608-1'
         echo 'Build stage successful'
       }
