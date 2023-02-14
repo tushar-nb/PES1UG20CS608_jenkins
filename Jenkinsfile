@@ -12,25 +12,15 @@ pipeline {
     stage('Test'){
       steps{
         sh 'cd main && ./a'
-//         sh 'cd main'
-// //         echo "$PWD"
-//         echo 'before printing directory list .'
-//         echo .* *
-//         sh './a'
         echo 'test stage successful'
-//         post{
-//           always{
-//             junit 'target/surefire-reports/*.xml'
-//           }
-//         }
      }
     }
-    stage('Deploy'){
-      steps{
-        sh 'scp myprogram user@server:/path/to/deploy'
-        echo 'Deployment successful'
-      }
-    }
+//     stage('Deploy'){
+//       steps{
+//         sh 'scp myprogram user@server:/path/to/deploy'
+//         echo 'Deployment successful'
+//       }
+//     }
   }
   post{
     failure{
