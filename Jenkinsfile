@@ -23,6 +23,9 @@ pipeline {
 //     }
   }
   post{
+    always{
+      echo 'pipeline is success'
+    }
     failure{
       echo 'pipeline failed'
     }
