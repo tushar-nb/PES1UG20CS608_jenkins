@@ -11,16 +11,16 @@ pipeline {
     }
     stage('Test'){
       steps{
-        sh 'cd main && ./a
+        sh 'cd main && ./a'
         echo 'test stage successful'
      }
     }
-//     stage('Deploy'){
-//       steps{
-//         sh 'scp myprogram user@server:/path/to/deploy'
-//         echo 'Deployment successful'
-//       }
-//     }
+    stage('Deploy'){
+      steps{
+        sh 'scp myprogram user@server:/path/to/deploy'
+        echo 'Deployment successful'
+      }
+    }
   }
   post{
     always{
