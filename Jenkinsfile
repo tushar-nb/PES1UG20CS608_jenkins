@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Test'){
       steps{
-        sh 'cd main && ./a'
+        sh 'cd main && ./a
         echo 'test stage successful'
      }
     }
