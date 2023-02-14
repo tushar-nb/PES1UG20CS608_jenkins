@@ -11,6 +11,7 @@ pipeline {
     }
     stage('Test'){
       steps{
+        sh 'cd main'
 //         sh 'cd main'
 // //         echo "$PWD"
 //         echo 'before printing directory list .'
